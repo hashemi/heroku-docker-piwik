@@ -27,6 +27,6 @@
         "ext-gd": "*"
     },
     "scripts": {
-        "compile": "setup-config.sh"
+        "compile": "sh setup-config.sh"
     }
 }
