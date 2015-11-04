@@ -5,7 +5,7 @@
             "type": "package",
             "package": {
                 "name": "piwik",
-                "version": "2.13.1",
+                "version": "2.15.0",
                 "type": "project",
                 "dist": {
                     "type": "zip",
@@ -21,7 +21,7 @@
         }
     ],
     "require": {
-        "php": "~5.6.0",
+        "php": ">=5.3.3",
         "piwik": "*",
         "ext-mbstring": "*",
         "ext-gd": "*"
