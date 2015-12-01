@@ -1,11 +1,11 @@
 #!/bin/sh
 
-regex="([^:]+)://([^:]+):([^@]+)@([^:]+):([0-9]+)/(.*)"
+regex="([^:]+):\/\/([^:]+):([^@]+)@([^:]+):?([0-9]+)?\/(.*)"
 if [[ $DATABASE_URL =~ $regex ]]; then
   DB_USERNAME=${BASH_REMATCH[2]}
   DB_PASSWORD=${BASH_REMATCH[3]}
   DB_HOST=${BASH_REMATCH[4]}
-  DB_PORT=${BASH_REMATCH[5]}
+  DB_PORT=${BASH_REMATCH[5]:-3306}
   DB_NAME=${BASH_REMATCH[6]}
 fi
 
