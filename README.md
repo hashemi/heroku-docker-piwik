@@ -2,7 +2,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Version: *2.13.1*
+Version: *2.16.0*
 
 ## Installation
 
@@ -18,6 +18,15 @@ Deploy to Heroku and add mysql add-on then simply follow install steps.
 
 You can use composer to install additional plug-ins. See https://github.com/composer/installers 
 for more info...
+
+## Update
+
+Please do not use the update feature build into piwik. This will 
+upgrade the files and the database but not the image. So if you 
+restart you will have the new database schema but the old files.
+Instead:
+    * `git pull`
+    * `git push dokku master`
 
 ## What about that Dockerfile?
 

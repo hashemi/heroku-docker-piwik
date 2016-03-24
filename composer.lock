@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "754bd4faa78b50f895738ab2b744896a",
-    "content-hash": "74a1aad387a72c828c639c9dfb1ca312",
+    "hash": "14942c0e2b8d924a499d1e3d4d973fb3",
+    "content-hash": "1c81760140cc9211abec46fbff8939ee",
     "packages": [
         {
             "name": "piwik",
-            "version": "2.15.0",
+            "version": "2.16.0",
             "dist": {
                 "type": "zip",
-                "url": "http://builds.piwik.org/piwik-2.15.0.zip",
+                "url": "https://builds.piwik.org/piwik-2.16.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -26,7 +26,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.3",
+        "php": "~7.0.3",
         "ext-mbstring": "*",
         "ext-gd": "*"
     },
