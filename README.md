@@ -2,7 +2,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Version: *2.16.0*
+[Piwik](http://www.piwik.com) Version: *2.16.1*
 
 ## Installation
 
@@ -23,8 +23,10 @@ for more info...
 
 Please do not use the update feature build into piwik. This will 
 upgrade the files and the database but not the image. So if you 
-restart you will have the new database schema but the old files.
+restart you will have the new database schema but the old files. Now you are screwed.
+
 Instead:
+    * Wait for an update of this repo or submit a PR
     * `git pull`
     * `git push dokku master`
 
