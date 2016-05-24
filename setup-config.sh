@@ -18,3 +18,9 @@ sed -i s/#DB_NAME/$DB_NAME/ vendor/piwik/piwik/config/config.ini.php
 sed -i s/#DB_PORT/$DB_PORT/ vendor/piwik/piwik/config/config.ini.php
 sed -i s/#DB_PREFIX/$DB_PREFIX/ vendor/piwik/piwik/config/config.ini.php
 sed -i s/#SECRET_TOKEN/$SECRET_TOKEN/ vendor/piwik/piwik/config/config.ini.php
+
+# Install geolite database
+cd vendor/piwik/piwik/misc \
+ && curl http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz > GeoLiteCity.dat.gz \
+ && gunzip GeoLiteCity.dat.gz \
+ && mv GeoLiteCity.dat GeoIPCity.dat
