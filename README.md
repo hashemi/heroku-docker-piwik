@@ -26,9 +26,9 @@ upgrade the files and the database but not the image. So if you
 restart you will have the new database schema but the old files. Now you are screwed.
 
 Instead:
-    * Wait for an update of this repo or submit a PR
-    * `git pull`
-    * `git push dokku master`
+ * Wait for an update of this repo or submit a PR
+ * `git pull`
+ * `git push dokku master`
 
 ## What about that Dockerfile?
 
